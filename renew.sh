@@ -7,4 +7,4 @@ cd /etc/letsencrypt/live/www.mradwan.tk
 cat fullchain.pem privkey.pem > all.pem
 
 # reload haproxy
-service haproxy reload
+docker restart proxy
