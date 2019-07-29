@@ -1,6 +1,6 @@
  docker create --name proxy \
 	-v /root/web-HaProxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro \
-    -v /etc/letsencrypt/live/www.mradwan.tk/fullchain.pem:/etc/ssl/certs/fullchain.pem:ro \
+    -v /etc/letsencrypt/live/www.mradwan.tk/all.pem:/etc/ssl/certs/all.pem:ro \
     -p 80:80 \
     -p 443:443 \
     haproxy:1.7
