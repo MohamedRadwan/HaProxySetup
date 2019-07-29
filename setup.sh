@@ -14,4 +14,4 @@ docker run --name app-main \
 docker run --name react-weather \
  	-p 82:80 \
 	-v /root/react-weather-app/build:/usr/share/nginx/html/weather \
-	-d nginx
+	-d nginx:1.13.12-alpine
